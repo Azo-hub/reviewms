@@ -1,0 +1,23 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: reviewms
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/reviewmsDB?serverTimezone=UTC
+    name: reviewmsDB
+
+    password: *************
+    username: postgres
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+    #hibernate:
+      format_sql: true
+
